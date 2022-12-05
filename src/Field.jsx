@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import Context from "./Context";
+import { useEffect, useState } from "react";
 
 import Row from "./Row";
 

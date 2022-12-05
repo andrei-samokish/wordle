@@ -1,9 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import ReactDOM from "react-dom";
 
 function WinPortal(props) {
-  const winBG = useRef();
-
   function handleCloseClick() {
     // e.preventDefault();
     props.setShow(false);
