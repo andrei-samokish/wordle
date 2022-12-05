@@ -7,7 +7,6 @@ function GuidePortal(props) {
   function handleCloseClick() {
     // e.preventDefault();
     props.setShow(false);
-    document.getElementById("row0").focus();
   }
 
   useEffect(() => {

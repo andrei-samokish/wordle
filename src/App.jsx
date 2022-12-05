@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Context } from "./Context";
 import Field from "./Field";
 import GuidePortal from "./Guide";
@@ -38,6 +38,10 @@ export default function App() {
 
   const [showGuide, setShowGuide] = useState(true);
   const [showWin, setShowWin] = useState(false);
+
+  useEffect(() => {
+    document.getElementById("row0").focus();
+  }, [showGuide]);
 
   return (
     <>
