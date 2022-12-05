@@ -38,16 +38,24 @@ export default function App() {
 
   const [showGuide, setShowGuide] = useState(true);
   const [showWin, setShowWin] = useState(false);
+  const [didWin, setDidWin] = useState(false);
 
   useEffect(() => {
     document.getElementById("row0").focus();
   }, [showGuide]);
 
+  useEffect(() => {
+    if (showWin === true) setDidWin(true);
+    console.log("win");
+  }, [showWin]);
+
+  console.log(didWin);
+
   return (
     <>
       <GuidePortal show={showGuide} setShow={setShowGuide} />
       <WinPortal show={showWin} setShow={setShowWin} />
-      <fieldset disabled={showGuide || showWin}>
+      <fieldset disabled={showGuide || showWin || didWin}>
         <div className="flex flex-col items-center">
           <Header />
           <Context.Provider value={{ isInWord, setIsInWord, setShowWin }}>
