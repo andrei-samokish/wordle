@@ -1,0 +1,34 @@
+[
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  {
+    "inputs": [],
+    "name": "host",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "_word", "type": "string" }],
+    "name": "manuallyUpdateWord",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "userWord", "type": "string" }],
+    "name": "submitAttempt",
+    "outputs": [
+      { "internalType": "bool[5]", "name": "", "type": "bool[5]" },
+      { "internalType": "bool[5]", "name": "", "type": "bool[5]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string[]", "name": "words", "type": "string[]" }],
+    "name": "updateDictionary",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
