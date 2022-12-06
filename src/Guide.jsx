@@ -32,7 +32,7 @@ function GuidePortal(props) {
             <div
               key={index}
               className={
-                index % 2 == 0
+                index % 2 === 0
                   ? tailwindClassLetter + " bg-secondary"
                   : tailwindClassLetter + " bg-almost border-almost"
               }>
@@ -68,8 +68,8 @@ function GuidePortal(props) {
       </div>
       <div className="w-1/2 text-center mt-5">
         <p className="text-white">
-          Use your keyboard OR letter buttons at the botton to type. Press ENTER to submit your
-          word. It will shake if it is inappropriate.
+          Use your keyboard OR letter buttons at the botton to type (english only). Press ENTER to
+          submit your word. It will shake if it is inappropriate.
         </p>
       </div>
       <h3 className="text-white font-black text-3xl mt-10">TAP ANYWHERE TO PLAY</h3>
